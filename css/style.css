@@ -109,7 +109,7 @@ header nav{
     display: none;
 }
 
-@media all and (max-width: 500px){
+@media all and (max-width: 1200px){
     html{
         width: 100vw;
     }
