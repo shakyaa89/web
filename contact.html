@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <title>Document</title>
+    
+</head>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <img src="images/logo.png" alt="" width="80px">
+            </a>
+        </div>
+
+        <div class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="icons">
+            <button class="change-btn">
+                <h3>Change</h3>
+            </button>
+        </div>
+    </nav>
+</header>
+<body>
+    <section class="form-section">
+        <div class="container">
+            <form onsubmit = "validate()">
+            <div class="form-container">
+                <div class="fname">
+                    <label>First Name:</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div class="lname">
+                    <label>Last Name:</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+                <div class="num-inp">
+                    <label>Phone No.:</label>
+                    <input type="number" name="phno" id="phno">
+                </div>
+                <div class="email">
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+            </div>
+    
+            <div class="message-container">
+                <div class="message">
+                    <label>Message:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+            </div>
+    
+            <div class="submit-container">
+                <div class="submit-btn">
+                    <button class="submitbtn" id="submit">Submit</button>
+                </div>
+            </div>
+    
+            </form>
+        </div>
+    
+        <script>
+            function validate(){
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var phoneno = document.getElementById("phno").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+    
+            if (fname == "" || lname == "" || email == "" || phoneno == "" || message == "") {
+              alert("Empty spaces detected. Please fill out the form!");
+            } else {
+                alert("Thank you for your feedback!");
+            }
+        }
+        </script>
+    
+        <script ></script>
+    </section>
+</body>
+</html>
