@@ -105,11 +105,42 @@ header nav{
     border: 1px solid black;
 }
 
+.gmkfull, .akkofull{
+    display: none;
+}
+
 @media all and (max-width: 500px){
     html{
-        width: 1500px;
+        width: 100vw;
     }
+
+    header nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul, .change-btn{
+        display: none;
+    }
+
     body{
         background-image: none;
+    }
+
+    .main-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .akkohalf, .gmkhalf{
+        display: none;
+    }
+
+    .gmkfull, .akkofull{
+        display: block;
+        width: 250px;
     }
 }
